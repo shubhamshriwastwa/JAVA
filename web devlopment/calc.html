@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calc</title> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Inconsolata:wght@200;800&display=swap" rel="stylesheet">
+</head>
+<body> 
+    Number 1 <input type="text" id="val1" name="value1" value=""/>
+    Number 2 <input type="text" id="val2" name="value2" value=""/>
+    <input type="button" name="submit" value="click me" onclick="javascript:addNumbers()" />
+    Answer <input type="text" id="answer" name="answer" value="" />
+
+    <script>
+        function addNumbers() {
+            var value1 = parseInt(document.getElementById("val1").value);
+            var value2 = parseInt(document.getElementById("val2").value);
+            var ans = document.getElementById("answer");
+            ans.value = value1 + value2;
+            
+
+
+        }
+    </script>
+
+    
+</body>
+</html>
